@@ -1,0 +1,88 @@
+/* Reset basic styling */
+/* Universal styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: linear-gradient(to bottom, blue, darkblue);
+  color: #333;
+}
+
+/* Header styling */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2em;
+  color: white;
+}
+
+/* Navbar styling */
+.navbar {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-nav .nav-link {
+  color: white !important;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ddd !important;
+}
+
+/* Main content styling */
+main {
+  max-width: 800px;
+  margin: 2em auto;
+  padding: 1em;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Product image hover effect */
+#products img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#products img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+
+section {
+  margin-bottom: 1.5em;
+}
+
+/* Section header styling */
+
+h2 {
+  color: black;
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+
+/* List styling */
+
+ul {
+  list-style-type: disc;
+  padding-left: 1.5em;
+}
+
+li {
+  margin-bottom: 0.3em;
+}

@@ -26,3 +26,14 @@ console.log(product3, price3);
 console.log(product4, price4);
 console.log(product5, price5);
 console.log(storeHours);
+
+const age = 14;
+
+if (age >= 14) {
+console.log('You can get your driver’s license')
+
+} else {
+
+console.log('You cannot get your license')
+
+}
