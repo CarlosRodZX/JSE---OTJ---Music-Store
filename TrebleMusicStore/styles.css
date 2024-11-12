@@ -54,12 +54,12 @@ body::before {
 header {
   background-color: #fff;
   color: White;
-  padding: 1em;
+  padding: 2em;
   text-align: center;
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 4em;
   color: white;
   font-family: monospace;
   font-weight: bolder;
@@ -79,6 +79,7 @@ h1 {
 }
 
 /* Main content styling */
+
 main {
   max-width: 800px;
   margin: 2em auto;
@@ -90,6 +91,7 @@ main {
 
 
 /* Product image hover effect */
+
 #products img {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -144,4 +146,5 @@ li {
 .card-text {
   font-weight: bold;
   color: #333;
+  font-size: 25px;
 }
