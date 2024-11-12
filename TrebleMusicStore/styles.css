@@ -6,18 +6,54 @@
   box-sizing: border-box;
 }
 
-/* Body styling */
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  background: linear-gradient(to bottom, blue, darkblue);
-  color: #333;
+
+
+
+
+/* Remove default Bootstrap background colors */
+
+body, .navbar, header, .container, .navbar-dark {
+  background-color: transparent !important;
 }
+
+
+/* Background video styling to cover the whole screen */
+
+.background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Ensure content appears above the video */
+
+body, .container, .navbar, header {
+  position: relative;
+  z-index: 1;
+  color: white; 
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); 
+  z-index: 0;
+}
+
+
 
 /* Header styling */
 header {
-  background-color: #333;
-  color: #fff;
+  background-color: #fff;
+  color: White;
   padding: 1em;
   text-align: center;
 }
@@ -25,6 +61,8 @@ header {
 h1 {
   font-size: 2em;
   color: white;
+  font-family: monospace;
+  font-weight: bolder;
 }
 
 /* Navbar styling */
@@ -70,9 +108,10 @@ section {
 /* Section header styling */
 
 h2 {
-  color: black;
-  font-size: 1.5em;
+  color: white;
+  font-size: 2.5em;
   margin-bottom: 0.5em;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 
@@ -85,4 +124,24 @@ ul {
 
 li {
   margin-bottom: 0.3em;
+}
+
+.col-md-4.col-sm-6.mb-4 {
+  cursor: pointer;
+}
+
+
+
+.card {
+  background-color: white;
+  border: none;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.card-text {
+  font-weight: bold;
+  color: #333;
 }

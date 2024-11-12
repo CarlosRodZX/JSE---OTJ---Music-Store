@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Treble Music Store</title>
 
     <!-- Bootstrap CSS -->
@@ -46,6 +48,13 @@
     </nav>
 
 
+     <!-- Background Video -->
+
+     <video autoplay loop muted playsinline class="background-video">
+        <source src="./assets/video/Band Playing together.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
 
     <!-- Page Content -->
 
@@ -61,57 +70,67 @@
     <main class="container">
 
         <section id="products" class="mt-4">
-
             <h2>Our Instruments</h2>
-
-
-            
-            <!-- Product Grid -->
-
-
-
+        
             <div class="row text-center">
-
                 <div class="col-md-4 col-sm-6 mb-4">
-                    <img src="./assets/images/Electric Guitar.jpg" alt="Electric Guitar" class="img-fluid rounded">
-                    <p>Electric Guitars</p>
+                    <div class="card h-100 shadow-sm">
+                        <a href="electric_guitars.html">
+                            <img src="./assets/images/Electric Guitar.jpg" alt="Electric Guitar" class="card-img-top img-fluid rounded">
+                        </a>
+                        <div class="card-body text-center">
+                            <p class="card-text">Electric Guitars - $<span id="price1">399.99</span></p>
+                        </div>
+                    </div>
                 </div>
-
-
+        
                 <div class="col-md-4 col-sm-6 mb-4">
-                    <img src="./assets/images/Acoustic Guitar.jpg" alt="Acoustic Guitar" class="img-fluid rounded">
-                    <p>Acoustic Guitars</p>
+                    <div class="card h-100 shadow-sm">
+                        <img src="./assets/images/Acoustic Guitar.jpg" alt="Acoustic Guitar" class="card-img-top img-fluid rounded">
+                        <div class="card-body text-center">
+                            <p class="card-text">Acoustic Guitars - $<span id="price2">200.00</span></p>
+                        </div>
+                    </div>
                 </div>
-
-
+        
                 <div class="col-md-4 col-sm-6 mb-4">
-                    <img src="./assets/images/Drum Set.jpg" alt="Drum Set" class="img-fluid rounded">
-                    <p>Drum Sets</p>
+                    <div class="card h-100 shadow-sm">
+                        <img src="./assets/images/Drum Set.jpg" alt="Drum Set" class="card-img-top img-fluid rounded">
+                        <div class="card-body text-center">
+                            <p class="card-text">Drum Sets - $<span id="price3">500.00</span></p>
+                        </div>
+                    </div>
                 </div>
-
-
+        
                 <div class="col-md-4 col-sm-6 mb-4">
-                    <img src="./assets/images/Keyboard Piano.jpg" alt="Keyboard" class="img-fluid rounded">
-                    <p>Keyboards</p>
+                    <div class="card h-100 shadow-sm">
+                        <img src="./assets/images/Keyboard Piano.jpg" alt="Keyboard" class="card-img-top img-fluid rounded">
+                        <div class="card-body text-center">
+                            <p class="card-text">Keyboards - $<span id="price4">300.00</span></p>
+                        </div>
+                    </div>
                 </div>
-
-
+        
                 <div class="col-md-4 col-sm-6 mb-4">
-                    <img src="./assets/images/Microphone.jpg" alt="Microphone" class="img-fluid rounded">
-                    <p>Microphones</p>
+                    <div class="card h-100 shadow-sm">
+                        <img src="./assets/images/Microphone.jpg" alt="Microphone" class="card-img-top img-fluid rounded">
+                        <div class="card-body text-center">
+                            <p class="card-text">Microphones - $<span id="price5">90.00</span></p>
+                        </div>
+                    </div>
                 </div>
-
-
+        
                 <div class="col-md-4 col-sm-6 mb-4">
-                    <img src="./assets/images/Amplifier.jpg" alt="Amplifier" class="img-fluid rounded">
-                    <p>Amplifiers</p>
+                    <div class="card h-100 shadow-sm">
+                        <img src="./assets/images/Amplifier.jpg" alt="Amplifier" class="card-img-top img-fluid rounded">
+                        <div class="card-body text-center">
+                            <p class="card-text">Amplifiers - $<span id="price6">150.00</span></p>
+                        </div>
+                    </div>
                 </div>
-
-
             </div>
-
-
         </section>
+        
 
 
         <section id="hours" class="mt-4">
